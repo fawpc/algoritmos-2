@@ -4,6 +4,7 @@ class Fila:
 		self.inicio = None
 		self.fim = None
 		self.tamanho = 0
+		self.conta = 0
 
 	def adicionar(self, valor):
 		no = No(valor)
@@ -12,13 +13,15 @@ class Fila:
 			self.fim = no
 		elif self.tamanho >=7:
 			no = No("esperando vaga")
-			print("no aguardo de vaga")
+			self.conta+=1			
+			print("no aguardo de vaga", self.conta)
 			self.fim.proximo = no
 			self.fim = no			
 			self.remover()	
 		elif self.tamanho >=5:
 			no = No("esperando vaga")
-			print("no aguardo de vagas")
+			self.conta+=1
+			print("no aguardo de vagas", self.conta)
 			self.fim.proximo = no
 			self.fim = no				
 		else:
