@@ -5,7 +5,7 @@ class Torre():
 		self.endereco = endereco
 
 	def cadastrar(self):
-		[]
+		print("torre cadasdtrada !!!")
 
 	def imprimir(self):
 		print("a torre do condominio alvorada possui nome de: ",self.nome, " localização: ", self.endereco, " e identificação: ", self.id_torre)		
