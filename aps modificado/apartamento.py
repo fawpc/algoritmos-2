@@ -8,7 +8,7 @@ class Apartamento():
 
 
 	def cadastrar(self):
-		[]	
+		print("Apartamento cadastrado")	
 
 	def imprimir(self):
 			print("o Apartamento do condominio alvorada da torre: ", self.torre.nome, " |endereço: ", 
