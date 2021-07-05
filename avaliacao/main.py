@@ -1,0 +1,15 @@
+from autor import Autor
+from livro import Livro
+a1 = Autor(1, "pedro")
+a2 = Autor(2, "maria")
+a3 = Autor(3, "jose")
+livro1 = Livro(a1, "nao foram")
+livro1.ad()
+livro2 = Livro(a2, "dos que")
+livro2.ad()
+livro3 = Livro(a3, "a volta")
+livro3.ad()
+livro4 = Livro(a3, "aaaa")
+livro4.ad()
+livro3.exc()
+livro3.show()
